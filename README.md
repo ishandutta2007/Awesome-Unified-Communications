@@ -60,9 +60,9 @@ Below is a curated table of leading enterprise UCaaS and cloud phone system prov
 
 ## ⚡ Open-Source GitHub Projects
 
-Unified communications relies heavily on battle-tested open-source infrastructure for media processing, SIP routing, softswitches, and WebRTC streaming. Below are top open-source projects, **sorted by GitHub Star Count (descending)**:
+Unified communications relies heavily on battle-tested open-source infrastructure for media processing, SIP routing, softswitches, and WebRTC streaming. Below are top open-source projects, **sorted by GitHub Stars_Count (descending)**:
 
-| 📦 Project & Repo | ⭐ Star Count | 📜 License | ℹ️ Description & Key Capabilities |
+| 📦 Project & Repo | ⭐ Stars_Count | 📜 License | ℹ️ Description & Key Capabilities |
 | :--- | :--- | :--- | :--- |
 | **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** | [<img src="https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white" alt="Rocket.Chat Stars"/>](https://github.com/RocketChat/Rocket.Chat/stargazers) | MIT | **Ultimate open-source team communication platform**. Features channels, direct messaging, file sharing, video conferencing via Jitsi integration, and omnichannel support. The leading self-hosted Slack alternative with an extensive app marketplace. |
 | **[Mattermost](https://github.com/mattermost/mattermost)** | [<img src="https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white" alt="Mattermost Stars"/>](https://github.com/mattermost/mattermost/stargazers) | MIT / Commercial | **Enterprise-grade secure collaboration platform**. Built for developer and security-conscious teams with channels, messaging, file sharing, and integrated audio/video calling. High compliance (HIPAA/FINRA). |
