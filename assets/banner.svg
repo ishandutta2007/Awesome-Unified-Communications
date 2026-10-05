@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Background Dynamic Elements -->
+  <g opacity="0.25">
+    <circle cx="150" cy="80" r="100" fill="#6366f1">
+      <animate attributeName="cy" values="80;100;80" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1050" cy="220" r="120" fill="#ec4899">
+      <animate attributeName="cy" values="220;200;220" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <path d="M 50,150 Q 300,50 600,150 T 1150,150" fill="none" stroke="url(#glowGrad)" stroke-width="4" filter="url(#glow)">
+      <animate attributeName="d" values="M 50,150 Q 300,50 600,150 T 1150,150; M 50,150 Q 300,250 600,150 T 1150,150; M 50,150 Q 300,50 600,150 T 1150,150" dur="10s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g text-anchor="middle">
+    <rect x="510" y="35" width="180" height="30" rx="15" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="600" y="55" fill="#c7d2fe" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">AWESOME CURATED LIST</text>
+
+    <text x="600" y="130" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5" filter="url(#glow)">
+      Awesome Unified Communications 📞💬📹
+    </text>
+
+    <text x="600" y="175" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400">
+      VoIP Telephony • Video Conferencing • SIP Routing • Team Collaboration
+    </text>
+
+    <g transform="translate(0, 215)" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500">
+      <rect x="340" y="0" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="415" y="21" fill="#38bdf8">🌐 SaaS Ecosystem</text>
+      
+      <rect x="525" y="0" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="600" y="21" fill="#4ade80">⚡ Open-Source Softswitches</text>
+
+      <rect x="710" y="0" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="785" y="21" fill="#f472b6">🔒 Secure SIP / WebRTC</text>
+    </g>
+  </g>
+</svg>
